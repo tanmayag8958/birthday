@@ -169,7 +169,7 @@ new Promise((resolve) => {
     loader.remove();
     scene.add(object);
     chess.rotation.x = 0.3;
-    chess.position.y = -1;
+    chess.position.y = -1.1;
   });
 });
 
