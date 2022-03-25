@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.js"></script>
+    <script src="./threeJs-loader/OBJLoader.js"></script>
+    <script src="./threeJs-loader/MTLLoader.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div id='loading' class="loading-container">
+    <div class="loading d-flex justify-content-center">
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>
+<div class="position-absolute btn-container p-3 d-flex justify-content-center">
+    <div class="col-4 d-flex justify-content-center">
+        <button id="btn-zoom" type="button" class="btn btn-outline-secondary btn-shadow p-0">
+            <i class="p-3 fa fa-search-minus" onclick="btnToggle(event)"></i>
+        </button>
+    </div>
+    <div class="col-4 d-flex justify-content-center">
+        <button id="btn-rotate" type="button" class="btn btn-outline-secondary btn-shadow p-0">
+            <i class="p-3 fa fa-arrows large" onclick="btnToggle(event)"></i>
+        </button>
+    </div>
+    <div class="col-4 d-flex justify-content-center">
+        <button id="btn-audio" type="button" class="btn btn-outline-secondary btn-shadow p-0">
+            <i class="p-3 fa fa-music large" onclick="play()"></i>
+            <audio id="audio" src="./blender-files/Ruth%20B%20-%20Dandelions%20(slowed&%23x2B;reverb&%23x2B;lyrics).mp3"></audio>
+        </button>
+    </div>
+</div>
+
+</div>
+<script src="js/chess.js"></script>
+</body>
+</html>
