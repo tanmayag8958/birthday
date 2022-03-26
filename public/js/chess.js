@@ -127,7 +127,7 @@ scene.add(directionalLight);
 let bg = new THREE.Mesh(
   new THREE.SphereGeometry(100, 20, 20),
   new THREE.MeshBasicMaterial({
-    map: THREE.ImageUtils.loadTexture('images/nature.jpeg'),
+    map: THREE.ImageUtils.loadTexture('images/night.jpeg'),
     side: THREE.BackSide
   })
 );
@@ -184,6 +184,20 @@ function play() {
     audio.play();
     element.classList.remove('btn-outline-secondary');
     element.classList.add('btn-secondary');
+  }
+}
+
+function hideShow() {
+  let element = document.getElementById('birthday-text');
+  let btnElement = document.getElementById('btn-hide');
+  if (element.style.visibility === "hidden") {
+    element.style.visibility = "visible";
+    btnElement.classList.remove('btn-outline-secondary');
+    btnElement.classList.add('btn-secondary');
+  } else {
+    element.style.visibility = "hidden";
+    btnElement.classList.remove('btn-secondary');
+    btnElement.classList.add('btn-outline-secondary');
   }
 }
 

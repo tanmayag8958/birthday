@@ -32,24 +32,29 @@
     </div>
 </div>
 <div class="position-absolute btn-container p-3 d-flex justify-content-center">
-    <div class="col-4 d-flex justify-content-center">
+    <div class="col-3 d-flex justify-content-center">
         <button id="btn-zoom" type="button" class="btn btn-outline-secondary btn-shadow p-0">
             <i class="p-3 fa fa-search-minus" onclick="btnToggle(event)"></i>
         </button>
     </div>
-    <div class="col-4 d-flex justify-content-center">
+    <div class="col-3 d-flex justify-content-center">
         <button id="btn-rotate" type="button" class="btn btn-outline-secondary btn-shadow p-0">
             <i class="p-3 fa fa-arrows large" onclick="btnToggle(event)"></i>
         </button>
     </div>
-    <div class="col-4 d-flex justify-content-center">
+    <div class="col-3 d-flex justify-content-center">
         <button id="btn-audio" type="button" class="btn btn-outline-secondary btn-shadow p-0">
             <i class="p-3 fa fa-music large" onclick="play()"></i>
             <audio id="audio" src="./blender-files/Bade-Achhe-Lagte-Hain-Amit-Kumar.mp4"></audio>
         </button>
     </div>
+    <div class="col-3 d-flex justify-content-center">
+        <button id="btn-hide" type="button" class="btn btn-secondary btn-shadow p-0">
+            <i class="p-3 fa fa-angle-down large" onclick="hideShow()"></i>
+        </button>
+    </div>
 </div>
-<div class="position-absolute txt-container p-3 d-flex justify-content-center">
+<div id="birthday-text" class="position-absolute txt-container p-3 d-flex justify-content-center">
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
             <p class="h3">
